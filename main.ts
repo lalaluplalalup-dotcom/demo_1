@@ -20,7 +20,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     }
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
-    radio.sendString("\"Hey, bist Du da?\"")
+    radio.sendString("Wie heisst Du?")
 })
 input.onGesture(Gesture.Shake, function () {
     Hand = randint(1, 3)
