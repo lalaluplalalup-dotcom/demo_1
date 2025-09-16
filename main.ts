@@ -20,7 +20,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     }
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
-	
+    radio.sendString("\"Hey, bist Du da?\"")
 })
 input.onGesture(Gesture.Shake, function () {
     Hand = randint(1, 3)
@@ -42,6 +42,3 @@ input.onGesture(Gesture.Shake, function () {
 })
 let Hand = 0
 radio.setGroup(1)
-basic.forever(function () {
-    radio.sendString("\"Hey, bist Du da?\"")
-})
